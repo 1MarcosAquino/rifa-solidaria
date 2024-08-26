@@ -1,0 +1,209 @@
+/* Estilos Gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #b76f7d;
+  --title-color: #74787d;
+  --primary-pink: #e91e63;
+  --white-color: #fefefe;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #181818;
+  margin: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-width: 800px;
+  text-align: center;
+
+  background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-light-pink-empty-wooden-texture-background-picture-image_1159331.jpg");
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 30%;
+  grid-template-rows: 45% 15% auto;
+  row-gap: 1rem;
+}
+
+/* Título e Subtítulo */
+.header h1 {
+  margin-left: 50px;
+
+  font-size: 2.5rem;
+
+  position: relative;
+
+  width: 100%;
+
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.title-gray {
+  font-size: 4rem;
+  color: var(--title-color);
+
+  position: absolute;
+  left: 0;
+}
+
+.title-pink {
+  color: var(--primary-color);
+  font-size: 3rem;
+
+  position: absolute;
+  left: 0;
+  top: 50px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.subtitle {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+
+  width: fit-content;
+  height: 40px;
+
+  border-radius: 50px;
+
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  font-weight: 700;
+}
+
+.pix {
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+  p {
+    color: var(--title-color);
+
+    margin-left: 45px;
+
+    font-weight: 600;
+    width: fit-content;
+    height: max-content;
+  }
+  p + p {
+    margin-left: 0;
+    padding: 0.4rem 0.8rem;
+
+    color: var(--white-color);
+    background-color: var(--primary-color);
+
+    border-radius: 50px;
+  }
+}
+
+/* Seção do Prêmio */
+.prize {
+  margin-top: 20px;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.prize h2 {
+  color: var(--primary-color);
+  /* text-transform: lowercase; */
+  margin-bottom: 10px;
+  line-height: 0.9;
+}
+
+.prize h2 span {
+  /* color: var(--primary-pink); */
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* .prize h2 span + span {
+  color: var(--title-color);
+} */
+
+.prize-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+.raffle {
+  background-color: var(--white-color);
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Seção da Rifa */
+.raffle p {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #585858;
+  font-weight: 700;
+
+  background-color: transparent;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.number {
+  background-color: #fce4ec;
+  color: #e91e63;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.displayNone {
+  display: none;
+}
+
+/*
+ .number:hover {
+  background-color: #e91e63;
+  color: white;
+} 
+  */
